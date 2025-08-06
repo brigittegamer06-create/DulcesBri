@@ -1,0 +1,58 @@
+/* Fuente elegante desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather&display=swap');
+
+body {
+  background-color: #fdfdfd;
+  font-family: 'Merriweather', serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  color: #6b4c3b;
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6b4c3b;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #8c5e45;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+button {
+  background-color: #6b4c3b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8c5e45;
+}
