@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chucherías Brigitte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍬 Chucherías Brigitte</h1>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#carrito">Carrito</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="productos">
+    <h2>Nuestras chucherías</h2>
+    <div class="catalogo">
+      <div class="producto">
+        <img src="gomitas.jpg" alt="Gomitas">
+        <h3>Gomitas surtidas</h3>
+        <p>Bs. 5.00</p>
+        <button onclick="agregarAlCarrito('Gomitas surtidas', 5)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="paletas.jpg" alt="Paletas">
+        <h3>Paletas frutales</h3>
+        <p>Bs. 3.00</p>
+        <button onclick="agregarAlCarrito('Paletas frutales', 3)">Agregar</button>
+      </div>
+      <!-- Puedes agregar más productos aquí -->
+    </div>
+  </section>
+
+  <section id="carrito">
+    <h2>🛒 Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: Bs. 0.00</p>
+  </section>
+
+  <section id="contacto">
+    <h2>📞 Contáctanos</h2>
+    <p>📍 Caracas, Venezuela</p>
+    <p>📱 WhatsApp: +58 XXX-XXX</p>
+    <p>📧 Email: contacto@chucheriasbrigitte.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
