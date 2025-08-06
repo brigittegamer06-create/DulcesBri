@@ -19,7 +19,7 @@ function actualizarCarrito() {
 
   carrito.forEach((item, index) => {
     const li = document.createElement('li');
-    li.textContent = `${item.nombre} - Bs. ${item.precio.toFixed(2)}`;
+    li.textContent = `${item.nombre} - Bs. ${item.precio.toFixed(2)} `;
     const btn = document.createElement('button');
     btn.textContent = 'Eliminar';
     btn.onclick = () => eliminarDelCarrito(index);
@@ -30,3 +30,5 @@ function actualizarCarrito() {
 
   totalTexto.textContent = `Total: Bs. ${total.toFixed(2)}`;
 }
+
+
