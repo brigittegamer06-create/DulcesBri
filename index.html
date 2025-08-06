@@ -2,76 +2,69 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>DulcesBri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DulcesBrii</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>DulcesBri</h1>
+    <div class="logo">
+      <h1>DulcesBrii</h1>
+      <p>Tu rincón elegante de chucherías</p>
+    </div>
     <nav>
+      <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
+    <div class="carrito">
+      <h3>🛒 Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: Bs. 0.00</p>
+    </div>
   </header>
 
-  <section id="productos">
-    <h2>Nuestros Dulces</h2>
-    <p>Descubre nuestras delicias artesanales hechas con amor.</p>
-    <button>Ver catálogo</button>
-  </section>
+  <main>
+    <section id="inicio">
+      <h2>Bienvenida a DulcesBrii</h2>
+      <p>Descubre nuestras chucherías artesanales con un toque de elegancia.</p>
+    </section>
 
-  <section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una tienda familiar dedicada a crear dulces elegantes y deliciosos.</p>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Escríbenos a dulcesbri@example.com</p>
-  </section>
-</body>
-</html>
-
-        <img src="gomitas.jpg" alt="Gomitas">
-        <h3>Gomitas surtidas</h3>
-        <p>Bs. 5.00</p>
-        <button onclick="agregarAlCarrito('Gomitas surtidas', 5)">Agregar</button>
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="galeria">
+        <div class="producto">
+          <img src="gomitas.jpg" alt="Gomitas">
+          <h3>Gomitas surtidas</h3>
+          <p>Bs. 5.00</p>
+          <button onclick="agregarAlCarrito('Gomitas surtidas', 5)">Agregar</button>
+        </div>
+        <div class="producto">
+          <img src="paletas.jpg" alt="Paletas">
+          <h3>Paletas frutales</h3>
+          <p>Bs. 3.00</p>
+          <button onclick="agregarAlCarrito('Paletas frutales', 3)">Agregar</button>
+        </div>
+        <!-- Agrega más productos aquí -->
       </div>
-      <div class="producto">
-        <img src="paletas.jpg" alt="Paletas">
-        <h3>Paletas frutales</h3>
-        <p>Bs. 3.00</p>
-        <button onclick="agregarAlCarrito('Paletas frutales', 3)">Agregar</button>
-      </div>
-      <!-- Puedes agregar más productos aquí -->
-    </div>
-  </section>
+    </section>
 
-  <section id="carrito">
-    <h2>🛒 Tu carrito</h2>
-    <ul id="lista-carrito"></ul>
-    <p id="total">Total: Bs. 0.00</p>
-  </section>
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una tienda familiar dedicada a ofrecer chucherías con estilo, calidad y mucho amor.</p>
+    </section>
 
-  <section id="contacto">
-    <h2>📞 Contáctanos</h2>
-    <p>📍 Caracas, Venezuela</p>
-    <p>📱 WhatsApp: +58 XXX-XXX</p>
-    <p>📧 Email: contacto@chucheriasbrigitte.com</p>
-  </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📍 Caracas, Venezuela</p>
+      <p>📱 WhatsApp: +58 XXX-XXX</p>
+      <p>📧 Email: contacto@dulcesbrii.com</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
 
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
-
-<div class="galeria">
-  <div class="producto">
-    <img src="img/trufa.jpg" alt="Trufa de chocolate">
-    <h3>Trufa de Chocolate</h3>
-    <p>Deliciosa trufa artesanal con cacao 70%</p>
-  </div>
-</div>
