@@ -97,4 +97,11 @@ button:hover {
   background-color: #a83c5c;
 }
 
+.carrito p#total {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #a83c5c;
+  margin-top: 10px;
+}
+
 
