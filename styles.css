@@ -103,5 +103,33 @@ button:hover {
   color: #a83c5c;
   margin-top: 10px;
 }
+body {
+  background-color: #fdf6f0;
+  font-family: 'Georgia', serif;
+  color: #5c3a21;
+  text-align: center;
+}
+
+header {
+  background-color: #fbe8d3;
+  padding: 20px;
+  border-bottom: 2px solid #d8b08c;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.productos {
+  margin: 40px 0;
+}
+
+footer {
+  background-color: #fbe8d3;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
 
 
