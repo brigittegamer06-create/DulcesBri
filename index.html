@@ -6,7 +6,22 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
+  <header <div class="auth-container">
+  <div class="registro">
+    <h3>Crear cuenta</h3>
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="registrarUsuario()">Registrarse</button>
+  </div>
+
+  <div class="login">
+    <h3>Iniciar sesión</h3>
+    <input type="email" id="emailLogin" placeholder="Correo electrónico">
+    <input type="password" id="passwordLogin" placeholder="Contraseña">
+    <button onclick="iniciarSesion()">Entrar</button>
+  </div>
+</div>
+>
     <img src="logo.png" alt="Logo DulcesBrii">
     <h1>DulcesBrii</h1>
     <p class="slogan">Tentando Paladares</p>
@@ -48,6 +63,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
