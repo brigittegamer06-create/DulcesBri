@@ -138,3 +138,43 @@
   </div>
 </div>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "TU_API_KEY",
+    authDomain: "TU_DOMINIO.firebaseapp.com",
+    projectId: "TU_PROJECT_ID",
+    appId: "TU_APP_ID"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // Registro
+  window.registrarUsuario = function () {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(userCredential => alert("Usuario registrado"))
+      .catch(error => alert(error.message));
+  };
+
+  // Inicio de sesión
+  window.iniciarSesion = function () {
+    const email = document.getElementById("emailLogin").value;
+    const password = document.getElementById("passwordLogin").value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then(userCredential => alert("Sesión iniciada"))
+      .catch(error => alert(error.message));
+  };
+
+  // Verificar sesión activa
+  onAuthStateChanged(auth, user => {
+    if (user) {
+      console.log("Usuario activo:", user.email);
+    }
+  });
+</script>
+
