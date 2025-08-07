@@ -2,68 +2,74 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>DulcesBrii | Tentando Paladares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DulcesBrii</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header <div class="auth-container">
-  <div class="registro">
-    <h3>Crear cuenta</h3>
-    <input type="email" id="email" placeholder="Correo electrónico">
-    <input type="password" id="password" placeholder="Contraseña">
-    <button onclick="registrarUsuario()">Registrarse</button>
-  </div>
 
-  <div class="login">
-    <h3>Iniciar sesión</h3>
-    <input type="email" id="emailLogin" placeholder="Correo electrónico">
-    <input type="password" id="passwordLogin" placeholder="Contraseña">
-    <button onclick="iniciarSesion()">Entrar</button>
-  </div>
-</div>
->
-    <img src="logo.png" alt="Logo DulcesBrii">
-    <h1>DulcesBrii</h1>
-    <p class="slogan">Tentando Paladares</p>
+  <header>
+    <img src="logo.png" alt="DulcesBrii" class="logo">
+    <h1>DulcesBrii 🍭</h1>
+
+    <div class="auth-container">
+      <div class="registro">
+        <h3>Crear cuenta</h3>
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="registrarUsuario()">Registrarse</button>
+      </div>
+
+      <div class="login">
+        <h3>Iniciar sesión</h3>
+        <input type="email" id="emailLogin" placeholder="Correo electrónico">
+        <input type="password" id="passwordLogin" placeholder="Contraseña">
+        <button onclick="iniciarSesion()">Entrar</button>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="presentacion">
-      <h2>Bienvenidos a DulcesBrii</h2>
-      <p>Descubre nuestros dulces artesanales, hechos con amor y pensados para tentar tu paladar.</p>
-    </section>
+  <nav>
+    <ul>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#pedidos">Mis pedidos</a></li>
+    </ul>
+  </nav>
 
-    <section class="productos">
-      <h2>Productos Destacados</h2>
-      <div class="grid-productos">
-        <!-- Aquí puedes agregar tus productos -->
-        <div class="producto">
-          <img src="cocosette.jpg" alt="Cocosette">
-          <h3>Cocosette</h3>
-          <p>Promo especial</p>
-        </div>
-        <div class="producto">
-          <img src="flaquito.jpg" alt="Flaquito">
-          <h3>Flaquito</h3>
-          <p>Delicioso y económico</p>
-        </div>
-        <!-- Agrega más productos aquí -->
-      </div>
-    </section>
+  <section id="catalogo">
+    <h2>Productos Dulces</h2>
+    <div class="productos">
+      <!-- Aquí irán las tarjetas de productos -->
+    </div>
+  </section>
 
-    <section class="contacto">
-      <h2>Contáctanos</h2>
-      <p>Pedidos por WhatsApp: <strong>+58 XXX XXX XXXX</strong></p>
-      <p>Paga en la quincena sin complicaciones 💌</p>
-    </section>
-  </main>
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo">
+      <textarea placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="pedidos">
+    <h2>Mis pedidos</h2>
+    <div class="historial">
+      <!-- Aquí se mostrarán los pedidos del usuario -->
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 DulcesBrii. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Correo</a>
+    </div>
   </footer>
+
+  <script type="module" src="app.js"></script>
 </body>
 </html>
-
-
-
-
