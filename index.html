@@ -2,225 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DulcesBrii</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>DulcesBrii | Tentando Paladares</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <h1>DulcesBrii</h1>
-      <p>Tu rincón elegante de chucherías</p>
-    </div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="carrito">
-      <h3>🛒 Carrito</h3>
-      <ul id="lista-carrito"></ul>
-      <p id="total">Total: Bs. 0.00</p>
-    </div>
+    <img src="logo.png" alt="Logo DulcesBrii">
+    <h1>DulcesBrii</h1>
+    <p class="slogan">Tentando Paladares</p>
   </header>
 
   <main>
-    <section id="inicio">
-      <h2>Bienvenida a DulcesBrii</h2>
-      <p>Descubre nuestras chucherías artesanales con un toque de elegancia.</p>
+    <section class="presentacion">
+      <h2>Bienvenidos a DulcesBrii</h2>
+      <p>Descubre nuestros dulces artesanales, hechos con amor y pensados para tentar tu paladar.</p>
     </section>
 
-    <section id="productos">
-      <h2>Productos</h2>
-      <div class="galeria">
+    <section class="productos">
+      <h2>Productos Destacados</h2>
+      <div class="grid-productos">
+        <!-- Aquí puedes agregar tus productos -->
         <div class="producto">
-          <img src="gomitas.jpg" alt="Gomitas">
-          <h3>Gomitas surtidas</h3>
-          <p>Bs. 5.00</p>
-          <button onclick="agregarAlCarrito('Gomitas surtidas', 5)">Agregar</button>
+          <img src="cocosette.jpg" alt="Cocosette">
+          <h3>Cocosette</h3>
+          <p>Promo especial</p>
         </div>
         <div class="producto">
-          <img src="paletas.jpg" alt="Paletas">
-          <h3>Paletas frutales</h3>
-          <p>Bs. 3.00</p>
-          <button onclick="agregarAlCarrito('Paletas frutales', 3)">Agregar</button>
+          <img src="flaquito.jpg" alt="Flaquito">
+          <h3>Flaquito</h3>
+          <p>Delicioso y económico</p>
         </div>
         <!-- Agrega más productos aquí -->
       </div>
     </section>
 
-    <section id="nosotros">
-      <h2>Sobre Nosotros</h2>
-      <p>Somos una tienda familiar dedicada a ofrecer chucherías con estilo, calidad y mucho amor.</p>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>📍 Caracas, Centro Plaza</p>
-      <p>📱 WhatsApp: +58 0424-138-9133</p>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <p>Pedidos por WhatsApp: <strong>+58 XXX XXX XXXX</strong></p>
+      <p>Paga en la quincena sin complicaciones 💌</p>
     </section>
   </main>
 
-  <script src="script.js"></script>
-</body>
-</html>
-
-<div class="carrito">
-  <h3>🛒 Carrito</h3>
-  <p id="total">Total: Bs. 0.00</p>
-</div>
-
-<div class="producto">
-  <img src="img/trufas.jpg" alt="Trufas de chocolate">
-  <h3>Trufas de chocolate</h3>
-  <p>Bs. 6.00</p>
-  <button onclick="agregarAlCarrito('Trufas de chocolate', 6)">Agregar</button>
-</div>
-
-<div class="producto">
-  <img src="img/galletas.jpg" alt="Galletas rellenas">
-  <h3>Galletas rellenas</h3>
-  <p>Bs. 4.50</p>
-  <button onclick="agregarAlCarrito('Galletas rellenas', 4.5)">Agregar</button>
-</div>
-
-<div class="producto">
-  <img src="img/caramelos.jpg" alt="Caramelos surtidos">
-  <h3>Caramelos surtidos</h3>
-  <p>Bs. 2.00</p>
-  <button onclick="agregarAlCarrito('Caramelos surtidos', 2)">Agregar</button>
-</div>
-
-<div class="galeria">
-  <div class="producto">
-    <img src="img/trufas.jpg" alt="Trufas de chocolate">
-    <h3>Trufas de chocolate</h3>
-    <p>Bs. 6.00</p>
-    <button onclick="agregarAlCarrito('Trufas de chocolate', 6)">Agregar</button>
-  </div>
-
-  <div class="producto">
-    <img src="img/galletas.jpg" alt="Galletas rellenas">
-    <h3>Galletas rellenas</h3>
-    <p>Bs. 4.50</p>
-    <button onclick="agregarAlCarrito('Galletas rellenas', 4.5)">Agregar</button>
-  </div>
-
-  <div class="producto">
-    <img src="img/caramelos.jpg" alt="Caramelos surtidos">
-    <h3>Caramelos surtidos</h3>
-    <p>Bs. 2.00</p>
-    <button onclick="agregarAlCarrito('Caramelos surtidos', 2)">Agregar</button>
-  </div>
-
-  <div class="producto">
-    <img src="img/Tostones Tom.jpg" alt="Tostones Tom">
-    <h3>Tostones Tom</h3>
-    <p>$. 1.50</p>
-    <button onclick="agregarAlCarrito('Tostones Tom', 5)">Agregar</button>
-  </div>
-
-  <div class="producto">
-    <img src="img/paletas.jpg" alt="Paletas frutales">
-    <h3>Paletas frutales</h3>
-    <p>Bs. 3.00</p>
-    <button onclick="agregarAlCarrito('Paletas frutales', 3)">Agregar</button>
-  </div>
-
-  <div class="producto">
-    <img src="img/alfajores.jpg" alt="Alfajores">
-    <h3>Alfajores</h3>
-    <p>Bs. 4.00</p>
-    <button onclick="agregarAlCarrito('Alfajores', 4)">Agregar</button>
-  </div>
-</div>
-
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
-
-  const firebaseConfig = {
-    apiKey: "TU_API_KEY",
-    authDomain: "TU_DOMINIO.firebaseapp.com",
-    projectId: "TU_PROJECT_ID",
-    appId: "TU_APP_ID"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
-
-  // Registro
-  window.registrarUsuario = function () {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    createUserWithEmailAndPassword(auth, email, password)
-      .then(userCredential => alert("Usuario registrado"))
-      .catch(error => alert(error.message));
-  };
-
-  // Inicio de sesión
-  window.iniciarSesion = function () {
-    const email = document.getElementById("emailLogin").value;
-    const password = document.getElementById("passwordLogin").value;
-    signInWithEmailAndPassword(auth, email, password)
-      .then(userCredential => alert("Sesión iniciada"))
-      .catch(error => alert(error.message));
-  };
-
-  // Verificar sesión activa
-  onAuthStateChanged(auth, user => {
-    if (user) {
-      console.log("Usuario activo:", user.email);
-    }
-  });
-</script>
-
-<section id="registro">
-  <h2>Crear cuenta</h2>
-  <input type="email" id="email" placeholder="Correo electrónico">
-  <input type="password" id="password" placeholder="Contraseña">
-  <button onclick="registrarUsuario()">Registrarse</button>
-</section>
-
-<section id="login">
-  <h2>Iniciar sesión</h2>
-  <input type="email" id="emailLogin" placeholder="Correo electrónico">
-  <input type="password" id="passwordLogin" placeholder="Contraseña">
-  <button onclick="iniciarSesion()">Entrar</button>
-</section>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>DulcesBri</title>
-  <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-  <header>
-    <img src="banner.jpg" alt="Banner DulcesBri">
-    <h1>DulcesBri</h1>
-    <p>Endulzando tus momentos con amor artesanal</p>
-  </header>
-
-  <section class="productos">
-    <h2>Nuestros Dulces</h2>
-    <!-- Aquí irían tus productos -->
-  </section>
-
   <footer>
-    <p>Contáctanos: dulcesbri@gmail.com</p>
-    <p>Síguenos en Instagram @dulcesbri</p>
+    <p>&copy; 2025 DulcesBrii. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
 
-<header>
-  <img src="logo.png" alt="Logo DulcesBrii" style="width: 200px; margin-top: 20px;">
-  <h1>DulcesBrii</h1>
-  <p>Tentando Paladares</p>
-</header>
 
 
