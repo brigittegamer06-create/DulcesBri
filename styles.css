@@ -1,71 +1,96 @@
 body {
-  background-color: #fff0f5;
-  font-family: 'Georgia', serif;
-  color: #5c3a21;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: #fff0f5;
+  color: #4a2c2a;
 }
 
 header {
   text-align: center;
-  background-color: #fbe8f2;
-  padding: 30px 20px;
-  border-bottom: 2px solid #d8b08c;
-}
-
-header img {
-  width: 180px;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #d46abf;
-}
-
-.slogan {
-  font-size: 1.2em;
-  color: #a64ca6;
-  margin-top: 5px;
-}
-
-main {
   padding: 20px;
+  background-color: #ffe4ec;
 }
 
-.presentacion, .productos, .contacto {
-  margin-bottom: 40px;
+.logo {
+  width: 100px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.auth-container div {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e0c4d8;
+  width: 220px;
+}
+
+.auth-container h3 {
+  margin-top: 0;
+  color: #a64ca6;
+}
+
+.auth-container input,
+.auth-container button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #d8b08c;
+}
+
+.auth-container button {
+  background-color: #d46abf;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #f8c8dc;
+  padding: 10px;
   text-align: center;
 }
 
-.grid-productos {
+nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a2c2a;
+  font-weight: bold;
+}
+
+section {
+  padding: 30px;
+}
+
+.productos {
+  display: flex;
   flex-wrap: wrap;
-}
-
-.producto {
-  background-color: #fff;
-  border: 1px solid #e0c4d8;
-  padding: 10px;
-  width: 150px;
-  border-radius: 10px;
-}
-
-.producto img {
-  width: 100%;
-  border-radius: 8px;
+  gap: 20px;
+  justify-content: center;
 }
 
 footer {
-  background-color: #fbe8f2;
+  background-color: #ffe4ec;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #5c3a21;
+  padding: 20px;
 }
 
-
-
+.redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #a64ca6;
+}
