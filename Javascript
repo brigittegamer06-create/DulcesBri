@@ -1,0 +1,18 @@
+// Registro de usuario
+firebase.auth().createUserWithEmailAndPassword(email, password);
+
+// Guardar historial
+firebase.firestore().collection("usuarios").doc(uid).set({
+  carrito: [...],
+  pedidos: [...]
+});
+
+// Recuperar historial al iniciar sesión
+firebase.auth().onAuthStateChanged(user => {
+  if (user) {
+    firebase.firestore().collection("usuarios").doc(user.uid).get().then(doc => {
+      const historial = doc.data();
+      // Mostrar historial en la página
+    });
+  }
+});
